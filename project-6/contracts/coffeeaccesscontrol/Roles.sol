@@ -1,4 +1,4 @@
-pragma solidity ^0.4.24;
+pragma solidity >=0.4.21 <0.6.0;
 
 /**
  * @title Roles
@@ -23,8 +23,8 @@ library Roles {
    * @dev remove an account's access to this role
    */
   function remove(Role storage role, address account) internal {
-    require(account != address(0));
-    require(has(role, account));
+    require(account != address(0),"Account not Found");
+    require(has(role, account),"Account has no role assigned");
 
     role.bearer[account] = false;
   }
@@ -38,7 +38,7 @@ library Roles {
     view
     returns (bool)
   {
-    require(account != address(0));
+    require(account != address(0),"Account not Found");
     return role.bearer[account];
   }
 }

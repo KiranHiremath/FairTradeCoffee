@@ -1,4 +1,4 @@
-pragma solidity ^0.4.24;
+pragma solidity >=0.4.21 <0.6.0;
 
 /// Provides basic authorization control
 contract Ownable {
@@ -14,13 +14,13 @@ contract Ownable {
     }
 
     /// Look up the address of the owner
-    function owner() public view returns (address) {
+    function ownerAddress() public view returns (address) {
         return origOwner;
     }
 
     /// Define a function modifier 'onlyOwner'
     modifier onlyOwner() {
-        require(isOwner());
+        require(isOwner(),"Not Owner");
         _;
     }
 
@@ -42,7 +42,7 @@ contract Ownable {
 
     /// Define an internal function to transfer ownership
     function _transferOwnership(address newOwner) internal {
-        require(newOwner != address(0));
+        require(newOwner != address(0), "Not Listed as Owner");
         emit TransferOwnership(origOwner, newOwner);
         origOwner = newOwner;
     }
