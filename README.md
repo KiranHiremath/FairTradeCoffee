@@ -19,13 +19,13 @@ https://rinkeby.etherscan.io/tx/0x57735b53cac8880ce4ebe02818791a251c3e0cf9492e02
 ### Diagrams
 * Activity
 ![truffle test](images/FTC_Activity_Diagram.png)
-* 
-*State
+
+* State
 ![truffle test](images/FTC_State_Diagram.png)
-* 
+
 * Sequence
 ![truffle test](images/FTC_Sequence_Diagram.png)
-* 
+
 * Class
 ![truffle test](images/FTC_Class_Diagram.png)
 
