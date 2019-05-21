@@ -17,16 +17,16 @@ This repository containts an Ethereum DApp that demonstrates a Supply Chain flow
 https://rinkeby.etherscan.io/tx/0x57735b53cac8880ce4ebe02818791a251c3e0cf9492e02d86b4525bac695ba23
 
 ### Diagrams
-Activity
+* Activity
 ![truffle test](images/FTC_Activity_Diagram.png)
-
-State
+* 
+*State
 ![truffle test](images/FTC_State_Diagram.png)
-
-Sequence
+* 
+* Sequence
 ![truffle test](images/FTC_Sequence_Diagram.png)
-
-Class
+* 
+* Class
 ![truffle test](images/FTC_Class_Diagram.png)
 
 
@@ -44,7 +44,8 @@ Class
     This package adds additional assertions that can be used to test Ethereum smart contracts inside Truffle tests. Project uses this library to explicityly test appropriate Events are emitted during state change.
 
 ### IPFS
-    InterPlanetary File System (IPFS) is a protocol and network designed to create a content-addressable, peer-to-peer method of storing and sharing hypermedia in a distributed file system. Current projet has not been uploaded to IPFS.
+InterPlanetary File System (IPFS) is a protocol and network designed to create a content-addressable, peer-to-peer method of storing and sharing hypermedia in a distributed file system. 
+Current projet has not been uploaded to IPFS.
 
 ## Getting Started
 
